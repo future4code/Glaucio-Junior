@@ -1,0 +1,29 @@
+// Exercicio 1 
+const bool1 = true  // nessa linha me diz que a variavel boll1 é verdadeira e constante, ou seja, nao muda seu valor 
+const bool2 = false //nessa linha me diz que a variavel boll2 é falsa e constante, ou seja, nao muda seu valor 
+const bool3 = !bool2 //nessa linha me diz que a variavel boll3 é inversa da boll2, ou seja ela é true.
+
+let resultado = bool1 && bool2 // o resultado das duas variaveis vao ser false, pois o bool2 é false.
+console.log("a. ", resultado)  //aqui vai imprimir o resultado false.
+
+resultado = bool1 && bool2 && bool3  // o resultado das duas variaveis vao ser false, pois o bool2 é false.
+console.log("b. ", resultado) //aqui vai imprimir o resultado false.
+
+resultado = !resultado && (bool1 || bool2) //ja aqui ele vai inverter o resultado de false pra true e comparar a variavel bool1 e bool2 
+console.log("c. ", resultado) //aqui vai imprimir o resultado true.
+
+console.log("d. ", typeof resultado) //vai imprimir uma variavel booleana.
+
+// Exercicio 2 
+let primeiroNumero = prompt("Digite um numero!") //Aqui ele pede para digitar um numero qualquer, sempre que pedir um numero para o usuario em prompt, tem que fazer a conversao de string para Number
+let segundoNumero = prompt("Digite outro numero!") //Aqui ele pede para digitar outro numero qualquer, sempre que pedir um numero para o usuario em prompt, tem que fazer a conversao de string para Number
+
+const soma = primeiroNumero + segundoNumero //Aqui ele faz a soma dos dois numeros, digitados pelo usuario.
+
+console.log(soma) //aqui ele imprime no console a soma do primeiro e do segundo numero.
+
+// Exercicio 3 
+
+Sempre que pedir um numero para o usuario em prompt, tem que fazer a conversao de string para Number, entao o certo ficaria:
+let primeiroNumero = Number(prompt("Digite um numero!"))
+let primeiroNumero = Number(prompt("Digite outro numero!"))
