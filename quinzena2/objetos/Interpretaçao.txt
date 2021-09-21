@@ -1,0 +1,62 @@
+// Exercicio 1 
+const filme = {
+	nome: "Auto da Compadecida", 
+	ano: 2000, 
+	elenco: [
+		"Matheus Nachtergaele", "Selton Mello", "Denise Fraga", 
+		"Virginia Cavendish"
+		], 
+	transmissoesHoje: [
+		{canal: "Telecine", horario: "21h"}, 
+		{canal: "Canal Brasil", horario: "19h"}, 
+		{canal: "Globo", horario: "14h"}
+		]
+}
+
+console.log(filme.elenco[0])
+console.log(filme.elenco[filme.elenco.length - 1])
+console.log(filme.transmissoesHoje[2])
+
+A) R: No primeiro console.log ira mostrar Matheus Nachtergaele que é o primeiro nome do elenco.
+   R: No seguno console.log ira mostrar o nome da ultima pessoa do elenco 
+   R: No terceiro console.log ira mostar o ultimo canal que ira ser transmitido o filme e o horario
+
+// Exercicio 2 
+
+const cachorro = {
+	nome: "Juca", 
+	idade: 3, 
+	raca: "SRD"
+}
+
+const gato = {...cachorro, nome: "Juba"}
+
+const tartaruga = {...gato, nome: gato.nome.replaceAll("a", "o")}
+
+console.log(cachorro)
+console.log(gato)
+console.log(tartaruga)
+
+A) R: Nos console.log ira mostrar todos os dados do cachorro, ja no console.log do gato ele ira puxar as informaçoes do cachorro e ira imprimir o nome do juba do gato,
+no tartaruga ele ira puxar todas as informaçoes do gato, mais do cachorro e ira trocar a letra "a" pela letra "o" do nome do gato.
+
+B) R: Os "..." antes do nome de um objeto serve para puxar a inforçao do objeto anterior.
+
+//Exercicio 3 
+
+function minhaFuncao(objeto, propriedade) {
+	return objeto[propriedade]
+}
+
+const pessoa = {
+  nome: "Caio", 
+  idade: 23, 
+  backender: false
+}
+
+console.log(minhaFuncao(pessoa, "backender"))
+console.log(minhaFuncao(pessoa, "altura"))
+
+
+A) R: Sera impresso no console.log a opçao false pq caio nao e um backender.
+   R: No segundo sera apresentado um underfined, pois nao tem nenhuma variavel altura.
