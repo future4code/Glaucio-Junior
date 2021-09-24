@@ -1,0 +1,57 @@
+// Exercicio 1 
+
+
+const respostaDoUsuario = prompt("Digite o número que você quer testar")
+const numero = Number(respostaDoUsuario)
+
+if (numero % 2 === 0) {
+  console.log("Passou no teste.")
+} else {
+  console.log("Não passou no teste.")
+}
+
+A) R:Nesse codigo ele pede ao usuario para informar um numero para que possa ser testado, no teste ele vai pegar o numero do usuario e dividir por 2 
+B) R:Para os numeros divididos por 2 de resto 0 ele imprimira a resposta passou no teste.
+C) R:Agora para os numeros divididos por 2 e que sobrarem restos ele imprimira que nao passou no teste.
+
+// Exercicio 2 
+
+let fruta = prompt("Escolha uma fruta")
+let preco
+switch (fruta) {
+  case "Laranja":
+    preco = 3.5
+    break;
+  case "Maçã":
+    preco = 2.25
+    break;
+  case "Uva":
+    preco = 0.30
+    break;
+  case "Pêra":
+    preco = 5.5
+    break; // BREAK PARA O ITEM c.
+  default:
+    preco = 5
+    break;
+}
+console.log("O preço da fruta ", fruta, " é ", "R$ ", preco)
+
+A) R: No codigo acima, ele pede ao usuario que escolha uma fruta, e abre um case para varias frutas com seus valor.
+B) R: console.log("O preço da fruta ", Maçã, " é ", "R$ ", 2.25)
+C) R: Se fosse retirado o break do valor da pera ele passaria direto para o proximo dando o valor da pêra com 5 reias.
+
+// Exercicio 3 
+
+const numero = Number(prompt("Digite o primeiro número."))
+
+if(numero > 0) {
+  console.log("Esse número passou no teste")
+	let mensagem = "Essa mensagem é secreta!!!"
+}
+
+console.log(mensagem)
+
+A) R: A primeira linha pede ao usuario que digite o primeiro numero 
+B) R: Se o usuario responder com o numero 10 sendo ele maior que 0 , o numero escolhido passara no teste, tendo assim a liberaçao do console.log mostrando a mensagem secreta. Já se o usuario digitar o numero -10 ele nao passara no teste sendo assim nao mostrar nada no console.
+C) R: Apresentara um erro na ultima linha pois o console.log nao esta dentro do if.
