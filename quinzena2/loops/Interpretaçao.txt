@@ -1,0 +1,41 @@
+// Exercicio 1 
+
+let valor = 0
+for(let i = 0; i < 5; i++) {
+  valor += i
+}
+console.log(valor)    
+
+R: No codigo acima e um contador quando o numero for menor que 5 era ira somando o ultimo numero mais 1 quando o numero chegar a 4 o codigo e parado, aparacendo 10 no console 
+0+1=1
+1+1 =2 
+2+1 = 3
+3+3 = 6
+6+4 = 10 
+
+
+// Exercicio 2
+
+const lista = [10, 11, 12, 15, 18, 19, 21, 23, 25, 27, 30]
+for (let numero of lista) {
+  if (numero > 18) {
+		console.log(numero)
+	}
+}
+
+R: No codigo acima ele ira pegar a lista de numeros e imprimir no console somente os numero maiores que 18.
+
+// Exercicio 3 
+
+const quantidadeTotal = Number(prompt("Digite a quantidade de linhas: "))
+let quantidadeAtual = 0
+while(quantidadeAtual < quantidadeTotal){
+  let linha = ""
+  for(let asteriscos = 0; asteriscos < quantidadeAtual + 1; asteriscos++){
+    linha += "*"
+  }
+  console.log(linha)
+  quantidadeAtual++
+}
+
+R: Quando o usuario colocar o numero 4 ele imprimeira a soma dos asteriscos. mostrando 4 no console.
