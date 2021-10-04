@@ -1,0 +1,49 @@
+// Exercicio 1 
+
+const usuarios = [
+  { nome: "Amanda Rangel", apelido: "Mandi" },
+  { nome: "Laís Petra", apelido: "Laura" },
+  { nome: "Letícia Chijo", apelido: "Chijo" }
+]
+
+const novoArrayA = usuarios.map((item, index, array) => {
+   console.log(item, index, array)
+})
+
+
+A) R: Nesse codigo ela ira mostra os itens que tem no array, o que tem dentro do array e por ultimo o array completo 
+
+
+// Exercicio 2 
+
+const usuarios = [
+  { nome: "Amanda Rangel", apelido: "Mandi" },
+  { nome: "Laís Petra", apelido: "Laura" },
+  { nome: "Letícia Chijo", apelido: "Chijo" },
+]
+
+const novoArrayB = usuarios.map((item, index, array) => {
+   return item.nome
+})
+
+console.log(novoArrayB)
+
+A) R: nesse codigo ela ira me dar apenas os nomes que estao dentro do array.
+
+
+//Exercico 3 
+
+const usuarios = [
+  { nome: "Amanda Rangel", apelido: "Mandi" },
+  { nome: "Laís Petra", apelido: "Laura" },
+  { nome: "Letícia Chijo", apelido: "Chijo" },
+]
+
+const novoArrayC = usuarios.filter((item, index, array) => {
+   return item.apelido !== "Chijo"
+})
+
+console.log(novoArrayC)
+
+
+A) R: Nesse aqui sera impresso os arrays que nao contem o apelido Chijo, entao ira aparecer o restante.
